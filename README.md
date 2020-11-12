@@ -13,9 +13,9 @@ pip install -r requirements.txt
 ```
 * Run the following command to see the results
 ```
-python run.py
+python run_v1.py
 ```
-* You can view all model structures and training inside models directory
+* You can view all model structures and training inside models_v1 directory
 
 ## Dataset(version 1)
 
@@ -23,8 +23,8 @@ The data used can be found at this link - https://github.com/muxspace/facial_exp
 
 ## Models and Conclusion(version 1)
 
-First, I tried fine tuning well known models like ResNet50 and VGG19. I got a significantly low loss and high accuracy but the models were not able to perform well in real-time. It almost felt like they were trained to recognize faces instead of expressions.<br>
-Next, I tried creating a custom model which gave me a significantly higher loss and lower accuracy as compared to the previous two models but this model performed significantly better in real-time as compared to the last two models as it was atleast detecting a change in expression but it's accuracy still wasn't high enough to give a decent result.<br>
+First, I tried fine tuning well known models like ResNet50 and VGG19. I got a significantly low loss and high accuracy but the models were not able to perform well in real-time. It almost felt like they were trained to recognize faces instead of expressions.<br><br>
+Next, I tried creating a custom model which gave me a significantly higher loss and lower accuracy as compared to the previous two models but this model performed significantly better in real-time as compared to the last two models as it was able to detect a change in expression but it's accuracy still wasn't high enough to give a decent result.<br><br>
 In my opinion, this is the result of over-training on a very small dataset which leads to the model focusing more on faces than their expression to get results. In order to fix this, a better dataset is required.
 
 ## Room for Improvement
