@@ -3,7 +3,7 @@ import os
 import shutil
 
 ORIGINAL_PATH = 'D:/assets/data/emotions/images/'
-NEW_PATH = 'data/'
+NEW_PATH = './data/'
 
 cols = ['id', 'image', 'emotion']
 df = pd.read_csv("D:/assets/data/emotions/data/500_picts_satz.csv", names=cols)

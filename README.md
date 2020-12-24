@@ -31,3 +31,11 @@ In my opinion, this is the result of over-training on a very small dataset which
 
 * We can try using a better dataset.
 * Try using more custom models and more hyperparameter tuning.
+
+## Dataset(version 2)
+
+The data used can be found at this link - https://anonfiles.com/bdj3tfoeba/data_zip. This is the FER-2013 dataset which contains 48x48 pixel grayscale images of faces divided between 7 classes. In total this dataset has 28,709 train images and 7178 test images but during training some images were removed to balance out the class distribution.
+
+## Models and Conclusion(version 2)
+
+First, I tried fine tuning well known models like ResNet50 and VGG19 but I got horrible results in terms of loss and accuracy. Next, I tried a custom model which gave me significantly better results as it got a lot better accuracy and lower loss than the pretrained models. This custom model was able to properly detect changes in my expressions this time but the accuracy was still too low to be used anywhere.
